@@ -134,104 +134,66 @@ nav {
       outline: medium;
       cursor: pointer; }
 
-#banner {
-  width: 100%;
-  display: block;
-  position: relative; }
-  #banner img {
-    width: 100%; }
-  #banner .banner_info {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    padding-top: 20%; }
-    #banner .banner_info h3 {
-      font: 2.5rem/2.5rem "";
-      font-weight: 800;
-      color: #fff;
-      width: 100%;
-      text-align: center;
-      box-sizing: border-box;
-      margin-bottom: 47px; }
-    #banner .banner_info p {
-      max-width: 600px;
-      color: #fff;
-      box-sizing: border-box;
-      font-size: 1rem;
-      margin: 0 auto;
-      text-align: center;
-      font-weight: 700; }
+#banner > a {
+  display: block; }
+  #banner > a img {
+    display: block;
+    width: 900px;
+    margin: 0 auto; }
+#banner h3 {
+  font: 30px/34px "";
+  font-weight: 700;
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 40px;
+  margin-bottom: 17px; }
+#banner p {
+  font: 16px/25px "";
+  color: #585858;
+  width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #585858;
+  padding-bottom: 35px; }
 
-#content-container {
-  padding: 0 1%; }
-  #content-container h3 {
-    font: 25px/25px "";
-    text-align: center;
-    padding: 48px 0;
-    font-style: italic; }
-  #content-container .items-container {
-    width: 100%; }
-    #content-container .items-container .item {
-      width: 32%;
-      padding: 10px 0;
-      float: left; }
-      #content-container .items-container .item img {
-        width: 100%;
-        display: block;
-        margin-bottom: 12px; }
-      #content-container .items-container .item h4 {
-        font: 22px/24px ""; }
-      #content-container .items-container .item p {
-        font: 14px/24px ""; }
-      #content-container .items-container .item:nth-child(3n+2) {
-        margin: 0 2%; }
-  #content-container #load_more h4 {
-    font: 30px/30px "";
-    font-style: italic;
-    text-align: center;
-    padding: 30px 0; }
-
-#features_container {
-  width: 100%; }
-  #features_container h3 {
-    font: 25px/25px "";
-    text-align: center;
-    font-style: italic;
-    padding: 48px 0; }
-  #features_container .feature {
-    position: relative;
-    width: 100%;
-    margin-bottom: 50px; }
-    #features_container .feature img {
-      display: block;
-      width: 100%; }
-    #features_container .feature .feature_info {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      padding-top: 143px; }
-      #features_container .feature .feature_info h4 {
-        font: 36px/36px "";
-        font-weight: 800;
-        color: #fff;
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-        margin-bottom: 12px; }
-      #features_container .feature .feature_info p {
-        max-width: 600px;
-        color: #fff;
-        box-sizing: border-box;
-        font-size: 1rem;
-        margin: 0 auto;
-        text-align: center;
-        font-weight: 700; }
+#main {
+  width: 900px;
+  margin: 0 auto; }
+  #main .main_l {
+    width: 674px;
+    float: left; }
+    #main .main_l ul li {
+      padding: 20px 0; }
+      #main .main_l ul li dl dt {
+        float: left; }
+        #main .main_l ul li dl dt img {
+          display: block;
+          width: 260px; }
+      #main .main_l ul li dl dd {
+        float: right;
+        width: 395px; }
+        #main .main_l ul li dl dd h4 {
+          font: 24px/24px "";
+          font-weight: 700;
+          padding: 10px 0; }
+        #main .main_l ul li dl dd p {
+          font: 16px/25px "";
+          color: #585858;
+          padding: 20px 0; }
+        #main .main_l ul li dl dd a {
+          color: #E6297A; }
 
 @media screen and (max-width: 1000px) {
   nav .nav li:nth-child(6) {
     display: none; }
   nav .nav li:nth-child(7) {
     display: none; } }
+@media screen and (max-width: 905px) {
+  #banner > a img {
+    width: 100%; }
+  #banner h3 {
+    width: 100%; }
+  #banner p {
+    width: 100%; } }
 @media screen and (max-width: 800px) {
   nav #show_hamburger {
     display: block; }
