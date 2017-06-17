@@ -159,107 +159,34 @@ nav {
   padding-bottom: 35px;
   margin-bottom: 32px; }
 
-#main {
-  width: 1000px;
-  margin: 0 auto; }
-  #main .main_l {
-    width: 685px;
-    float: left; }
-    #main .main_l ul li {
-      padding: 20px 0;
-      border-bottom: 1px solid #C3C3C3; }
-      #main .main_l ul li dl:hover dt:after {
-        opacity: 0.3; }
-      #main .main_l ul li dl:hover dd h4 {
-        color: #E6297A; }
-      #main .main_l ul li dl dt {
-        position: relative;
-        float: left; }
-        #main .main_l ul li dl dt:after {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background: #000000;
-          opacity: 0;
-          transition: 0.6s; }
-        #main .main_l ul li dl dt img {
-          display: block;
-          width: 260px; }
-      #main .main_l ul li dl dd {
-        float: right;
-        width: 395px; }
-        #main .main_l ul li dl dd h4 {
-          font: 24px/24px "";
-          font-weight: 700;
-          padding: 10px 0;
-          transition: 0.6s; }
-        #main .main_l ul li dl dd p {
-          font: 16px/25px "";
-          color: #585858;
-          padding: 14px 0; }
-        #main .main_l ul li dl dd a {
-          color: #E6297A; }
-  #main .main_r {
-    float: right;
-    width: 304px;
-    background: #f0f0f0; }
-    #main .main_r .dingYue h3 {
-      font: 20px/30px "";
-      text-align: center;
-      padding: 21px 0; }
-    #main .main_r .dingYue p {
-      padding: 0 27px; }
-      #main .main_r .dingYue p #email {
-        float: left;
-        width: 219px;
-        height: 30px;
-        border: 0; }
-      #main .main_r .dingYue p #email_btn {
-        float: left;
-        border: 0;
-        background: #1C1C1C;
-        height: 30px;
-        width: 30px;
-        color: #999999; }
-    #main .main_r .popular h3 {
-      font: 20px/30px "";
-      text-align: center;
-      padding: 21px 0 7px;
-      color: #E6297A; }
-    #main .main_r .popular ul li {
-      padding: 5px 11px 5px; }
-      #main .main_r .popular ul li h4 {
-        padding: 6px 0; }
-        #main .main_r .popular ul li h4 b {
-          color: #666666; }
-      #main .main_r .popular ul li dl {
-        border-bottom: 1px solid #C3C3C3;
-        padding-bottom: 15px; }
-        #main .main_r .popular ul li dl:hover dt:after {
-          opacity: 0.3; }
-        #main .main_r .popular ul li dl dt {
-          position: relative;
-          float: left; }
-          #main .main_r .popular ul li dl dt:after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: #000000;
-            opacity: 0;
-            transition: 0.6s; }
-          #main .main_r .popular ul li dl dt img {
-            width: 130px;
-            display: block; }
-        #main .main_r .popular ul li dl dd {
-          float: right;
-          width: 144px;
-          font: 14px/18px ""; }
+#content-container {
+  padding: 0 1%; }
+  #content-container h3 {
+    font: 25px/25px "";
+    text-align: center;
+    padding: 48px 0;
+    font-style: italic; }
+  #content-container .items-container {
+    width: 100%; }
+    #content-container .items-container .item {
+      width: 32%;
+      padding: 10px 0;
+      float: left; }
+      #content-container .items-container .item img {
+        width: 100%;
+        display: block;
+        margin-bottom: 12px; }
+      #content-container .items-container .item h4 {
+        font: 22px/24px ""; }
+      #content-container .items-container .item p {
+        font: 14px/24px ""; }
+      #content-container .items-container .item:nth-child(3n+2) {
+        margin: 0 2%; }
+  #content-container #load_more h4 {
+    font: 30px/30px "";
+    font-style: italic;
+    text-align: center;
+    padding: 30px 0; }
 
 footer {
   background: #1C1C1C;
@@ -310,55 +237,7 @@ footer {
   #banner p {
     width: 100%;
     padding: 0 2% 2%;
-    box-sizing: border-box; }
-
-  #main {
-    width: 100%; }
-    #main .main_l {
-      float: none;
-      width: 100%; }
-      #main .main_l ul {
-        width: 100%; }
-        #main .main_l ul li {
-          width: 100%;
-          padding: 20px 55px;
-          box-sizing: border-box; }
-          #main .main_l ul li dl {
-            width: 100%; }
-            #main .main_l ul li dl dt {
-              width: 36%; }
-              #main .main_l ul li dl dt img {
-                width: 100%; }
-            #main .main_l ul li dl dd {
-              float: left;
-              width: 60%;
-              margin-left: 2%; }
-
-  #main .main_r {
-    float: none;
-    width: 100%; }
-    #main .main_r .dingYue p {
-      padding-left: 13%; }
-      #main .main_r .dingYue p #email_btn {
-        width: 18%; }
-      #main .main_r .dingYue p #email {
-        width: 70%; }
-    #main .main_r .popular ul {
-      padding-left: 5%; }
-      #main .main_r .popular ul li {
-        width: 44%;
-        display: inline-block; }
-        #main .main_r .popular ul li h4 {
-          display: none; }
-        #main .main_r .popular ul li dl dt {
-          float: none; }
-          #main .main_r .popular ul li dl dt img {
-            width: 100%; }
-        #main .main_r .popular ul li dl dd {
-          float: none;
-          width: auto;
-          font-size: 18px;
-          padding: 7px 0; } }
+    box-sizing: border-box; } }
 @media screen and (max-width: 800px) {
   nav #show_hamburger {
     display: block; }
@@ -384,15 +263,7 @@ footer {
     #banner .banner_info p {
       color: #222222; }
 
-  #features_container .feature .feature_info {
-    position: relative;
-    padding-top: 4%; }
-    #features_container .feature .feature_info h4 {
-      color: #222222; }
-    #features_container .feature .feature_info p {
-      color: #222222; }
-
-  #main .main_l ul li dl dd p {
+  #content-container .items-container .item p {
     display: none; }
 
   footer .about {
@@ -402,4 +273,4 @@ footer {
     float: none;
     margin: 0 auto; } }
 
-/*# sourceMappingURL=shiShang.css.map */
+/*# sourceMappingURL=video.css.map */
