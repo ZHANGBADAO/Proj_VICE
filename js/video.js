@@ -1,9 +1,9 @@
 //鼠标滑过导航栏 出现二级导航
-let timer_down;
-let timer_up;
+var timer_down;
+var timer_up;
 $("nav .nav>li").hover(
 	function(){
-		let that=this;
+		var that=this;
 		clearTimeout(timer_up);
 		timer_down=setTimeout(
 			function(){
@@ -12,7 +12,7 @@ $("nav .nav>li").hover(
 		
 	},
 	function(){
-		let that=this;
+		var that=this;
 		clearTimeout(timer_down);
 		timer_up=setTimeout(
 			function(){
