@@ -49,3 +49,50 @@ $("#search_btn").toggle(function(){
 	$(this).prev().animate({width:"0"});
 	$(this).css({background: "url(img/index/06.png) no-repeat center"});
 });
+//-----------------------------------------
+//显示侧边栏
+var isShow=false;
+var mask;
+//添加遮罩层--------------------------------
+mask=document.createElement("div");
+$(mask).css({
+	position:"fixed",
+	zIndex:30,
+	left:0,
+	top:0,
+	width:"100%",
+	height:"100%",
+	display:"none",
+	background:"rgba(0,0,0,0)"
+});
+$("body").append(mask);
+//-------------------------------------------
+$("#show_hamburger").click(function(){
+			$("#nav_fixed").animate(
+					{left:"0px"}
+				);
+				$("header").animate(
+					{left:"200px"}
+				);
+				$("nav").animate(
+					{left:"200px"}
+				);
+				$(mask).css({display:"block"});
+});
+
+
+
+//隐藏侧边栏
+$(mask).click(function(){
+					$(mask).css({display:"none"});
+					$("#nav_fixed").animate(
+						{left:"-200px"}
+					);
+					$("header").animate(
+						{left:"0px"}
+					);
+					$("nav").animate(
+						{left:"0px"}
+					);
+					
+});

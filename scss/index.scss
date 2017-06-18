@@ -5,10 +5,20 @@ html {
     font-size: 16px;
 }
 
+#nav_fixed{
+    position: fixed;
+    left:-200px;
+    top:0;
+    z-index: 50;
+    width:200px;
+    height: 100%;
+    background: #EBEBED;
+}
 header {
     width: 100%;
     height: 1.75rem;
     background: #222222;
+    position: relative;
     b {
         float: left;
         font: 0.75rem/1.75rem "";
@@ -42,6 +52,7 @@ nav {
         border: 0;
         background: url(../img/index/hamburger_btn.PNG) no-repeat center;
         display: none;
+        cursor: pointer;
     }
     .logo {
         float: left;
