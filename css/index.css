@@ -1,6 +1,78 @@
 html {
   font-size: 16px; }
 
+#ceBian_nav {
+  width: 200px;
+  background: #efefef;
+  border: 1px solid #9a9;
+  position: relative; 
+  box-sizing: border-box;
+  height: auto;}
+  #ceBian_nav h4 {
+    height: 40px;
+    font: 20px/40px "";
+    border-bottom: 1px solid #666666; }
+  #ceBian_nav #yiji {
+    box-sizing: border-box;
+    transition: 0.6s; }
+    #ceBian_nav #yiji > li {
+      cursor: pointer;
+      height: 40px;
+      background: #fff;
+      border-bottom: 1px solid #666666;
+      font: 16px/40px "";
+      box-sizing: border-box;
+      padding-left: 20px; }
+      #ceBian_nav #yiji > li b {
+        float: left; }
+      #ceBian_nav #yiji > li img {
+        float: right;
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        transform: rotate(180deg); }
+    #ceBian_nav #yiji .erji {
+      display: none;
+      height: 240px;
+      }
+      #ceBian_nav #yiji .erji li {
+        height: 60px;
+        border-bottom: 1px solid #666666;
+        box-sizing: border-box;
+        background: #e3d91f;
+        padding-left: 40px; }
+        #ceBian_nav #yiji .erji li b {
+          float: left;
+          font: 14px/60px ""; }
+        #ceBian_nav #yiji .erji li s {
+          float: right;
+          width: 60px;
+          height: 20px;
+          background: #a2a;
+          margin: 18px 18px 0 0;
+          color: #fff;
+          text-align: center;
+          line-height: 20px;
+          cursor: pointer; }
+    #ceBian_nav #yiji .shengyuSecond {
+      height: 40px;
+      background: #ac4;
+      border-bottom: 1px solid #666666;
+      font: 16px/40px "";
+      text-align: center;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: none; }
+  #ceBian_nav #shengyu {
+    height: 40px;
+    background: #eee;
+    border-bottom: 1px solid #666666;
+    font: 16px/40px "";
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer; }
+
+
 #nav_fixed {
   position: fixed;
   left: -200px;
@@ -8,7 +80,8 @@ html {
   z-index: 50;
   width: 200px;
   height: 100%;
-  background: #EBEBED; }
+  background: #EBEBED; 
+  }
 
 header {
   width: 100%;

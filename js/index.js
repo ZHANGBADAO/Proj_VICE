@@ -51,7 +51,6 @@ $("#search_btn").toggle(function(){
 });
 //-----------------------------------------
 //显示侧边栏
-var isShow=false;
 var mask;
 //添加遮罩层--------------------------------
 mask=document.createElement("div");
@@ -95,4 +94,12 @@ $(mask).click(function(){
 						{left:"0px"}
 					);
 					
+});
+
+//点击 某个一级菜单显示 对应的二级菜单
+let isdown2 = false;
+$("#yiji").on("click",">li",function(){
+	$(this).next().slideToggle("slow");
+	
+	
 });
